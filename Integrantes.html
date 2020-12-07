@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" /> 
-    <title>Taller 4 Web</title>
+    <title>Taller 5 Web</title>
 </head>
 <body>
 
-    <h1>REGISTRO DE USUARIOS</h1>
-
     <form id = "form1" nombre = "form1" method="post">
+        <div class="form">
+            <h1>REGISTRO DE USUARIOS</h1>
+            <div class="grupo">     
     <label for = "pais">Seleccione su país de origen  </label>  
     <select name = "paises">
         <option id = "pais1">Alemania</option>
@@ -26,19 +27,33 @@
         <option id = "pais11">Panamá</option>
         <option id = "pais12">Paraguay</option>
         <option id = "pais13">Venezuela</option>
-    </select><br><br>
+    </select>
+</div> 
+    <div class="grupo">   
     <label for = "nombre">Nombre</label><br>
-    <input type = "text" id = "nombre" name = "nombre" placeholder="Escriba su nombre"><br><br>
+    <input type = "text" id = "nombre" name = "nombre" placeholder="Escriba su nombre">
+</div>
+    <div class="grupo">   
     <label for = "apellido">Apellido</label><br>
-    <input type = "text" id = "apellido" name = "apellido" placeholder="Esciba su apellido"><br><br>
+    <input type = "text" id = "apellido" name = "apellido" placeholder="Esciba su apellido">
+</div>
+    <div class="grupo">   
     <label for = "direccion">Dirección de residencia</label><br>
-    <input type ="text" id = "direccion" name = "direccion" placeholder = "Ejemplo: Calle 25 #29-11 Bucaramanga Santander"><br><br>
+    <input type ="text" id = "direccion" name = "direccion" placeholder = "Ejemplo: Calle 25 #29-11 Bucaramanga Santander">
+</div>
+    <div class="grupo">   
     <laber for = "usuario">Usuario o Username </laber><br>
-    <input type = "text" id = "usuario" name = "usuario" placeholder = "Escriba su usuario"><br><br>
+    <input type = "text" id = "usuario" name = "usuario" placeholder = "Escriba su usuario">
+</div>
+    <div class="grupo">   
     <laber for = "password">Contraseña</laber><br>
-    <input type = "password" id = "password" name = "password" placeholder = ""><br><br>
+    <input type = "password" id = "password" name = "password" placeholder = "">
+</div>
+    <div class="grupo">   
     <laber for = "email">Dirección de correo electrónico</laber><br>
-    <input type = "text" id = "email" name = "email" placeholder = "nombre@correo.com"><br><br>
+    <input type = "text" id = "email" name = "email" placeholder = "nombre@correo.com">
+</div>
+    <div class="grupo">   
     <laber for = "telefono">Número de teléfono o celular</laber><br>
     <select name = "codigopais">
         <option>+57</option>
@@ -49,10 +64,11 @@
         <option>+7</option>
         <option>+37</option>
     </select>
-    <input type = "number" id = "telefono" name = "telefono" placeholder = ""><br><br>
+    <input type = "number" id = "telefono" name = "telefono" placeholder = "">
+</div>
     <button type = "submit" name = "Registrar" id = "registrar" class = "btn">Registrar</button>    
+    </div>
 </form>
-    
     
 </body>
 </html>
