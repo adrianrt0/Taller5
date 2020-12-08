@@ -48,7 +48,7 @@ transition: .3s ease;
 }
 
 .form_input-error{
-font size:12px;
+font-size: 12px;
 margin-bottom: bottom 0;
 display:none;
 }
