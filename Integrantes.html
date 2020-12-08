@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="estilos.css" > 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+          
 </head>
 <body>
     <main>
         <h1>Registro</h1>
     <form action="" class="formulario" method="post" id = "formulario">
        
-    <div class="form_grupo" id="grupo_pais">
-    <label for = "pais" class="form_label">Seleccione su país de origen </label>            
+    <div class="formulario__grupo" id="grupo__pais">
+    <label for = "pais" class="formulario__label">Seleccione su país de origen </label>            
     <select name = "paises">
         <option id = "pais1">Alemania</option>
         <option id = "pais2">Canadá</option>
@@ -32,79 +33,79 @@
     </select> 
 </div> 
 
-<div class="form_grupo" id="grupo_nombre">  
-    <label for = "nombre" class="form_label">Nombres</label> 
-<div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "nombre" id="nombre">
-    <i class="form_validacion-estado far fa-times-circle"></i>
+<div class="formulario__grupo" id="grupo__nombre">  
+    <label for = "nombre" class="formulario__label">Nombres</label> 
+<div class="formulario__grupo-input">     
+    <input type = "text" class="formulario__input" name = "nombre" id="nombre">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
 </div>
-<p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
-</div>
-
-<div class="form_grupo" id="grupo_apellido">  
-    <label for = "apellido" class="form_label">Apellidos</label> 
-<div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "apellido" id="apellido">
-    <i class="form_validacion-estado far fa-times-circle"></i>
-</div>
-<p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
+<p class="formulario__input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
 </div>
 
-<div class="form_grupo" id="grupo_direccion">  
-    <label for = "direccion" class="form_label" >Direccion</label> 
-<div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "direccion" id="direccion" placeholder="cll 24 #31-40">
-    <i class="form_validacion-estado far fa-times-circle"></i>
+<div class="formulario__grupo" id="grupo__apellido">  
+    <label for = "apellido" class="formulario__label">Apellidos</label> 
+<div class="formulario__grupo-input">     
+    <input type = "text" class="formulario__input" name = "apellido" id="apellido">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
 </div>
-<p class="form_input-error">El campo dirección debe empezar por las
+<p class="formulario__input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
+</div>
+
+<div class="formulario__grupo" id="grupo__direccion">  
+    <label for = "direccion" class="formulario__label" >Direccion</label> 
+<div class="formulario__grupo-input">     
+    <input type = "text" class="formulario__input" name = "direccion" id="direccion" placeholder="cll 24 #31-40">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">El campo dirección debe empezar por las
     siguientes palabras.
     cll, cra, av, anv, trans</p>
 </div>
 
-<div class="form_grupo" id="grupo_usuario">  
-    <label for = "usuario" class="form_label">Usuario</label> 
-<div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "usuario" id="usuario">
-    <i class="form_validacion-estado far fa-times-circle"></i>
+<div class="formulario__grupo" id="grupo__usuario">  
+    <label for = "usuario" class="formulario__label">Usuario</label> 
+<div class="formulario__grupo-input">     
+    <input type = "text" class="formulario__input" name = "usuario" id="usuario">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
 </div>
-<p class="form_input-error">Este campo debe estar lleno y debe
+<p class="formulario__input-error">Este campo debe estar lleno y debe
     tener máximo 20 y mínimo
     10 caracteres. No debe contener
     caracteres extraños.</p>
 </div>
 
-<div class="form_grupo" id="grupo_password">  
-    <label for = "password" class="form_label">Password</label> 
-<div class="form_grupo-input">     
-    <input type = "password" class="formulario-input" name = "password" id="password">
-    <i class="form_validacion-estado far fa-times-circle"></i>
+<div class="formulario__grupo" id="grupo__password">  
+    <label for = "password" class="formulario__label">Password</label> 
+<div class="formulario__grupo-input">     
+    <input type = "password" class="formulario__input" name = "password" id="password">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
 </div>
-<p class="form_input-error">Este campo debe estar lleno y debe
+<p class="formulario__input-error">Este campo debe estar lleno y debe
     tener máximo 20 y mínimo
     15 caracteres. debe contener
     mayúsculas , numeros, letras y/o los
     siguientes caracteres [#,%,/,&] </p>
 </div>
 
-<div class="form_grupo" id="grupo_password2">  
-    <label for = "password2" class="form_label">Repetir Password</label> 
-<div class="form_grupo-input">     
-    <input type = "password" class="formulario-input" name = "password2" id="password2">
-    <i class="form_validacion-estado far fa-times-circle"></i>
+<div class="formulario__grupo" id="grupo__password2">  
+    <label for = "password2" class="formulario__label">Repetir Password</label> 
+<div class="formulario__grupo-input">     
+    <input type = "password" class="formulario__input" name = "password2" id="password2">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
 </div>
-<p class="form_input-error">Las password deben ser iguales </p>
-</div>
-
-<div class="form_grupo" id="grupo_email">  
-    <label for = "email" class="form_label">Email</label> 
-<div class="form_grupo-input">     
-    <input type = "email" class="formulario-input" name = "email" id="email" placeholder="correo@correo.com">
-    <i class="form_validacion-estado far fa-times-circle"></i>
-</div>
-<p class="form_input-error">Este campo debe estar lleno y máximo 120 caracteres.</p>
+<p class="formulario__input-error">Las password deben ser iguales </p>
 </div>
 
-<div class="form_grupo" id="grupo_cod"> 
+<div class="formulario__grupo" id="grupo__correo">  
+    <label for = "correo" class="formulario__label">Email</label> 
+<div class="formulario__grupo-input">     
+    <input type = "email" class="formulario__input" name = "correo" id="correo" placeholder="correo@correo.com">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">Este campo debe estar lleno y máximo 120 caracteres.</p>
+</div>
+
+<div class="formulario__grupo" id="grupo__cod"> 
     <label for = "">Codigo de pais</label> 
     <select name = "codigopais">
         <option>+57</option>
@@ -117,28 +118,55 @@
     </select>
 </div>
 
-<div class="form_grupo" id="grupo_telefono">  
-    <label for = "telefono" class="form_label">Telefono</label> 
-<div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "telefono" id="telefono">
-    <i class="form_validacion-estado far fa-times-circle"></i>
+<div class="formulario__grupo" id="grupo__telefono">  
+    <label for = "telefono" class="formulario__label">Telefono</label> 
+<div class="formulario__grupo-input">     
+    <input type = "text" class="formulario__input" name = "telefono" id="telefono">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
 </div>
-<p class="form_input-error">El telefono solo puede contener numeros</p>
+<p class="formulario__input-error">El telefono solo puede contener numeros</p>
 </div>
 
+<div class="formulario__grupo" id="grupo__modelo">  
+    <label for = "modelo" class="formulario__label">Ingrese su modelo favorito</label> 
+<div class="formulario__grupo-input">     
+    <input type = "text" class="formulario__input" name = "modelo" id="modelo">
+    <i class="formulario__validacion-estado far fa-times-circle"></i>
+</div>
+<p class="formulario__input-error">Es necesario que complete el espacio</p>
+</div>
 
-<div class="form_grupo" id="grupo_terminos">  
-    <label class="form_label">      
-    <input class="form_checkbox" type = "checkbox" name = "terminos" id="terminos">
+<div class="formulario__grupo" id="grupo__color">
+    <label for = "colorfav"><strong>Color Favorito</strong></label><br>
+        <input type = "radio" id = "azul" name = "color" value="1">Azul<br>
+        <input type = "radio" id = "rojo" name = "color" value="2">Rojo<br>
+        <input type = "radio" id = "verde" name = "color" value="3">Verde<br>
+</div>
+<div class="formulario__grupo" id="grupo__marca">
+    <label for = "marcafav"><strong>Marca Favorita</strong></label><br>
+        <input type = "radio" id = "Mercedes-Benz" name = "marca" value="1">Mercedes-Benz<br>
+        <input type = "radio" id = "BMW" name = "marca" value="2">BMW<br>
+        <input type = "radio" id = "Ford" name = "marca" value="3">Ford<br>
+</div>
+<div class="formulario__grupo" id="grupo__estilo">
+    <label for = "estilofav"><strong>Estilo Favorito</strong></label><br>
+        <input type = "radio" id = "Familiar" name = "estilo" value="1">Familiar<br>
+        <input type = "radio" id = "Deportivo" name = "estilo" value="2">Deportivo<br>
+        <input type = "radio" id = "Todoterreno" name = "estilo" value="3">Todoterreno<br>
+    </div>
+
+<div class="formulario__grupo" id="grupo__terminos">  
+    <label class="formulario__label">      
+    <input class="formulario__checkbox" type = "checkbox" name = "terminos" id="terminos">
     Acepto los terminos y condiciones</label>
 </div>
-<div class="form_mensaje" id="form_mensaje">
+<div class="formulario__mensaje" id="formulario__mensaje">
     <p><i class="fas fa-exclamation-triangle"></i><b>ERROR:</b>Por favor completa el formulario correctamente</p>
 </div>
 
-<div class="form_grupo formulario_grupo_btn_registrar">
-    <button type = "submit" class="formulario_btn">Registrar</button>
-    <p class="form_mensaje-exito" id ="form_mensaje-exito">Completado Exitosamente</p>
+<div class="formulario__grupo formulario__grupo-btn-enviar">
+    <button type="submit" class="formulario__btn">Registrar</button>
+    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario registrado exitosamente!</p>
 </div>    
 
 </form>
