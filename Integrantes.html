@@ -11,7 +11,7 @@
 <body>
     <main>
         <h1>Registro</h1>
-    <form action="" class="formulario" method="post" id = "form">
+    <form action="" class="formulario" method="post" id = "formulario">
        
     <div class="form_grupo" id="grupo_pais">
     <label for = "pais" class="form_label">Seleccione su país de origen </label>            
@@ -35,7 +35,7 @@
 <div class="form_grupo" id="grupo_nombre">  
     <label for = "nombre" class="form_label">Nombres</label> 
 <div class="form_grupo-input">     
-    <input maxlength="25" type = "text" class="formulario-input" name = "nombre" id="nombre" pattern="[a-zA-Z]+">
+    <input type = "text" class="formulario-input" name = "nombre" id="nombre">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
@@ -44,7 +44,7 @@
 <div class="form_grupo" id="grupo_apellido">  
     <label for = "apellido" class="form_label">Apellidos</label> 
 <div class="form_grupo-input">     
-    <input maxlength="25" type = "text" class="formulario-input" name = "apellido" id="apellido" pattern="[a-zA-Z]+">
+    <input type = "text" class="formulario-input" name = "apellido" id="apellido">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
@@ -53,7 +53,7 @@
 <div class="form_grupo" id="grupo_direccion">  
     <label for = "direccion" class="form_label" >Direccion</label> 
 <div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "direccion" id="direccion">
+    <input type = "text" class="formulario-input" name = "direccion" id="direccion" placeholder="cll 24 #31-40">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">El campo dirección debe empezar por las
@@ -64,10 +64,10 @@
 <div class="form_grupo" id="grupo_usuario">  
     <label for = "usuario" class="form_label">Usuario</label> 
 <div class="form_grupo-input">     
-    <input maxlength="20" minlength="10" type = "text" class="formulario-input" name = "usuario" id="usuario">
+    <input type = "text" class="formulario-input" name = "usuario" id="usuario">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
-<p class="form_input-error">y debe
+<p class="form_input-error">Este campo debe estar lleno y debe
     tener máximo 20 y mínimo
     10 caracteres. No debe contener
     caracteres extraños.</p>
@@ -76,7 +76,7 @@
 <div class="form_grupo" id="grupo_password">  
     <label for = "password" class="form_label">Password</label> 
 <div class="form_grupo-input">     
-    <input maxlength="20" minlength="15" type = "password" class="formulario-input" name = "password" id="password">
+    <input type = "password" class="formulario-input" name = "password" id="password">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y debe
@@ -98,7 +98,7 @@
 <div class="form_grupo" id="grupo_email">  
     <label for = "email" class="form_label">Email</label> 
 <div class="form_grupo-input">     
-    <input maxlength="120" type = "email" class="formulario-input" name = "email" id="email">
+    <input type = "email" class="formulario-input" name = "email" id="email" placeholder="correo@correo.com">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y máximo 120 caracteres.</p>
@@ -120,7 +120,7 @@
 <div class="form_grupo" id="grupo_telefono">  
     <label for = "telefono" class="form_label">Telefono</label> 
 <div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "telefono" id="telefono" pattern="[0-9]+">
+    <input type = "text" class="formulario-input" name = "telefono" id="telefono">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">El telefono solo puede contener numeros</p>
