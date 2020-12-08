@@ -10,11 +10,11 @@
 </head>
 <body>
     <main>
-    <form action="" method="post" id = "form">
-        <div class="form">
-            <h1>Registro</h1>
-            <div class="grupo">
-    <label for = "pais">Seleccione su país de origen </label><br></br>               
+        <h1>Registro</h1>
+    <form action="" class="formulario" method="post" id = "form">
+        <!--GRUPO PAIS-->
+    <div class="form_grupo" id="grupo_pais">
+    <label for = "pais" class="form_label">Seleccione su país de origen </label><br></br>               
     <select name = "paises">
         <option id = "pais1">Alemania</option>
         <option id = "pais2">Canadá</option>
@@ -31,33 +31,80 @@
         <option id = "pais13">Venezuela</option>
     </select> 
 </div> 
-    <div class="grupo">   
-    <input type = "text" name = "" id = "nombre" required><span class="barra"></span>
-    <label for = "">Nombre</label>
+<!--GRUPO NOMBRE-->
+<div class="form_grupo" id="grupo_nombre">  
+    <label for = "nombre" class="form_label">Nombre</label> 
+<div class="form_grupo-input">     
+    <input type = "text" name = "nombre" id="nombre">
+    <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
-    <div class="grupo">  
-    <input type = "text" name = "" id = "apellido" required><span class="barra"></span>
-    <label for = "">Apellido</label>   
+<p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
 </div>
-    <div class="grupo"> 
-    <input type ="text" name = "" id = "direccion" required><span class="barra"></span>     
-    <label for = "">Dirección de residencia</label>
+<!--GRUPO APELLIDO-->
+<div class="form_grupo" id="grupo_apellido">  
+    <label for = "apellido" class="form_label">Apellido</label> 
+<div class="form_grupo-input">     
+    <input type = "text" name = "apellido" id="apellido">
+    <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
-    <div class="grupo">   
-    <input type = "text" name = "" id = "usuario" required><span class="barra"></span>
-    <label for = "">Usuario o Username </label>
-    
+<p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
 </div>
-    <div class="grupo">  
-    <input type = "password" name = "" id = "password" required><span class="barra"></span>
-    <label for = "">Contraseña</label> 
+<!--GRUPO DIRECCION-->
+<div class="form_grupo" id="grupo_direccion">  
+    <label for = "direccion" class="form_label">Direccion</label> 
+<div class="form_grupo-input">     
+    <input type = "text" name = "direccion" id="direccion">
+    <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
-    <div class="grupo">   
-    <input type = "text" name = "" id = "email" required><span class="barra"></span>
-    <label for = "">Dirección de correo electrónico</label>
-    
+<p class="form_input-error">El campo dirección debe empezar por las
+    siguientes palabras.
+    cll, cra, av, anv, trans</p>
 </div>
-    <div class="grupo">  
+<!--GRUPO USUARIO-->
+<div class="form_grupo" id="grupo_usuario">  
+    <label for = "usuario" class="form_label">Usuario</label> 
+<div class="form_grupo-input">     
+    <input type = "text" name = "usuario" id="usuario">
+    <i class="form_validacion-estado far fa-times-circle"></i>
+</div>
+<p class="form_input-error">y debe
+    tener máximo 20 y mínimo
+    10 caracteres. No debe contener
+    caracteres extraños.</p>
+</div>
+<!--GRUPO PASSWORD-->
+<div class="form_grupo" id="grupo_password">  
+    <label for = "password" class="form_label">Password</label> 
+<div class="form_grupo-input">     
+    <input type = "password" name = "password" id="password">
+    <i class="form_validacion-estado far fa-times-circle"></i>
+</div>
+<p class="form_input-error">Este campo debe estar lleno y debe
+    tener máximo 20 y mínimo
+    15 caracteres. debe contener
+    mayúsculas , numeros, letras y/o los
+    siguientes caracteres [#,%,/,&] </p>
+</div>
+<!--GRUPO PASSWORD2-->
+<div class="form_grupo" id="grupo_password2">  
+    <label for = "password2" class="form_label">Repetir Password</label> 
+<div class="form_grupo-input">     
+    <input type = "password" name = "password2" id="password2">
+    <i class="form_validacion-estado far fa-times-circle"></i>
+</div>
+<p class="form_input-error">Las password deben ser iguales </p>
+</div>
+<!--GRUPO EMAIL-->
+<div class="form_grupo" id="grupo_email">  
+    <label for = "email" class="form_label">Email</label> 
+<div class="form_grupo-input">     
+    <input type = "email" name = "email" id="email">
+    <i class="form_validacion-estado far fa-times-circle"></i>
+</div>
+<p class="form_input-error">Este campo debe estar lleno y máximo 120 caracteres.</p>
+</div>
+<!--GRUPO CODIGO-->
+<div class="form_grupo" id="grupo_cod"> 
     <label for = "">Codigo de pais</label> <br></br>
     <select name = "codigopais">
         <option>+57</option>
@@ -69,12 +116,27 @@
         <option>+37</option>
     </select>
 </div>
-    <div class="grupo">
-    <input type = "number" name = "" id = "telefono" required><span class="barra"></span>
-    <label for = "telefono">Número de teléfono o celular</label>
+<!--GRUPO TELEFONO-->
+<div class="form_grupo" id="grupo_telefono">  
+    <label for = "telefono" class="form_label">Telefono</label> 
+<div class="form_grupo-input">     
+    <input type = "text" name = "telefono" id="telefono">
+    <i class="form_validacion-estado far fa-times-circle"></i>
+</div>
+<p class="form_input-error">El telefono solo puede contener numeros</p>
+</div>
+
+<!--GRUPO TERMINOS Y CONDICIONES-->
+<div class="form_grupo" id="grupo_terminos">  
+    <label class="form_label">      
+    <input class="form_checkbos" type = "checkbox" name = "terminos" id="terminos">
+    Acepto los terminos y condicions</label>
+</div>
+<div class="form_mensaje" id="form_mensaje">
+    <p><i class="fas fa-exclamation-triangle"></i><b>ERROR:</b>Por favor completa el formulario correctamente</p>
 </div>
     <button type = "submit" id = "registrar" name = "" class = "btn">Registrar</button>    
-</div>
+
 </form>
 </main>
 <script src="main.js"></script>  
