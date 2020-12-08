@@ -14,7 +14,7 @@
     <form action="" class="formulario" method="post" id = "form">
        
     <div class="form_grupo" id="grupo_pais">
-    <label for = "pais" class="form_label">Seleccione su país de origen </label><br></br>               
+    <label for = "pais" class="form_label">Seleccione su país de origen </label>            
     <select name = "paises">
         <option id = "pais1">Alemania</option>
         <option id = "pais2">Canadá</option>
@@ -33,18 +33,18 @@
 </div> 
 
 <div class="form_grupo" id="grupo_nombre">  
-    <label for = "nombre" class="form_label">Nombre</label> 
+    <label for = "nombre" class="form_label">Nombres</label> 
 <div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "nombre" id="nombre">
+    <input maxlength="25" type = "text" class="formulario-input" name = "nombre" id="nombre" pattern="[a-zA-Z]+">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
 </div>
 
 <div class="form_grupo" id="grupo_apellido">  
-    <label for = "apellido" class="form_label">Apellido</label> 
+    <label for = "apellido" class="form_label">Apellidos</label> 
 <div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "apellido" id="apellido">
+    <input maxlength="25" type = "text" class="formulario-input" name = "apellido" id="apellido" pattern="[a-zA-Z]+">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
@@ -64,7 +64,7 @@
 <div class="form_grupo" id="grupo_usuario">  
     <label for = "usuario" class="form_label">Usuario</label> 
 <div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "usuario" id="usuario">
+    <input maxlength="20" minlength="10" type = "text" class="formulario-input" name = "usuario" id="usuario">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">y debe
@@ -76,7 +76,7 @@
 <div class="form_grupo" id="grupo_password">  
     <label for = "password" class="form_label">Password</label> 
 <div class="form_grupo-input">     
-    <input type = "password" class="formulario-input" name = "password" id="password">
+    <input maxlength="20" minlength="15" type = "password" class="formulario-input" name = "password" id="password">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y debe
@@ -98,14 +98,14 @@
 <div class="form_grupo" id="grupo_email">  
     <label for = "email" class="form_label">Email</label> 
 <div class="form_grupo-input">     
-    <input type = "email" class="formulario-input" name = "email" id="email">
+    <input maxlength="120" type = "email" class="formulario-input" name = "email" id="email">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">Este campo debe estar lleno y máximo 120 caracteres.</p>
 </div>
 
 <div class="form_grupo" id="grupo_cod"> 
-    <label for = "">Codigo de pais</label> <br></br>
+    <label for = "">Codigo de pais</label> 
     <select name = "codigopais">
         <option>+57</option>
         <option>+31</option>
@@ -120,7 +120,7 @@
 <div class="form_grupo" id="grupo_telefono">  
     <label for = "telefono" class="form_label">Telefono</label> 
 <div class="form_grupo-input">     
-    <input type = "text" class="formulario-input" name = "telefono" id="telefono">
+    <input type = "text" class="formulario-input" name = "telefono" id="telefono" pattern="[0-9]+">
     <i class="form_validacion-estado far fa-times-circle"></i>
 </div>
 <p class="form_input-error">El telefono solo puede contener numeros</p>
