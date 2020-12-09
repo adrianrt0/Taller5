@@ -73,7 +73,7 @@ main {
 
 .formulario__grupo-terminos, 
 .formulario__mensaje,
-.formulario__grupo-btn-enviar {
+.formulario__grupo-btn-registrar {
 	grid-column: span 2;
 }
 
@@ -94,7 +94,7 @@ main {
 	margin: 0;
 }
 
-.formulario__grupo-btn-enviar {
+.formulario__grupo-btn-registrar {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -155,7 +155,7 @@ main {
 
 	.formulario__grupo-terminos, 
 	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
+	.formulario__grupo-btn-registrar {
 		grid-column: 1;
 	}
 
@@ -164,6 +164,7 @@ main {
 	}
 }
 
+/* ----- -----  Slider double Range ----- ----- */
 [slider] {
 	width: 300px;
 	position: relative;
@@ -269,8 +270,8 @@ main {
 	margin-left: -11px;
 	top: -39px;
 	z-index:3;
-	background-color: #d02128;
-	color: #fff;
+	background-color: none;
+	color: rgb(0, 0, 0);
 	width: 28px;
 	height: 28px;
 	border-radius: 28px;
