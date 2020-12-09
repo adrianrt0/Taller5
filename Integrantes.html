@@ -13,7 +13,7 @@
     <main>
         <h1>Registro</h1>
     <form action="" class="formulario" method="post" id = "formulario">
-       
+<!-- Grupo: Pais -->
     <div class="formulario__grupo" id="grupo__pais">
     <label for = "pais" class="formulario__label">Seleccione su país de origen </label>            
     <select name = "paises">
@@ -32,7 +32,7 @@
         <option id = "pais13">Venezuela</option>
     </select> 
 </div> 
-
+<!-- Grupo: Nombre -->
 <div class="formulario__grupo" id="grupo__nombre">  
     <label for = "nombre" class="formulario__label">Nombres</label> 
 <div class="formulario__grupo-input">     
@@ -41,7 +41,7 @@
 </div>
 <p class="formulario__input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
 </div>
-
+<!-- Grupo: Apellido -->
 <div class="formulario__grupo" id="grupo__apellido">  
     <label for = "apellido" class="formulario__label">Apellidos</label> 
 <div class="formulario__grupo-input">     
@@ -50,9 +50,9 @@
 </div>
 <p class="formulario__input-error">Este campo debe estar lleno y tener un maximo de 25 caracteres</p>
 </div>
-
+<!-- Grupo: Direccion -->
 <div class="formulario__grupo" id="grupo__direccion">  
-    <label for = "direccion" class="formulario__label" >Direccion</label> 
+    <label for = "direccion" class="formulario__label" >Dirección</label> 
 <div class="formulario__grupo-input">     
     <input type = "text" class="formulario__input" name = "direccion" id="direccion" placeholder="cll 24 #31-40">
     <i class="formulario__validacion-estado far fa-times-circle"></i>
@@ -61,7 +61,7 @@
     siguientes palabras.
     cll, cra, av, anv, trans</p>
 </div>
-
+<!-- Grupo: Usuario -->
 <div class="formulario__grupo" id="grupo__usuario">  
     <label for = "usuario" class="formulario__label">Usuario</label> 
 <div class="formulario__grupo-input">     
@@ -73,7 +73,7 @@
     10 caracteres. No debe contener
     caracteres extraños.</p>
 </div>
-
+<!-- Grupo: Password -->
 <div class="formulario__grupo" id="grupo__password">  
     <label for = "password" class="formulario__label">Password</label> 
 <div class="formulario__grupo-input">     
@@ -86,7 +86,7 @@
     mayúsculas , numeros, letras y/o los
     siguientes caracteres [#,%,/,&] </p>
 </div>
-
+<!-- Grupo: Password2 -->
 <div class="formulario__grupo" id="grupo__password2">  
     <label for = "password2" class="formulario__label">Repetir Password</label> 
 <div class="formulario__grupo-input">     
@@ -95,7 +95,7 @@
 </div>
 <p class="formulario__input-error">Las password deben ser iguales </p>
 </div>
-
+<!-- Grupo: Correo -->
 <div class="formulario__grupo" id="grupo__correo">  
     <label for = "correo" class="formulario__label">Email</label> 
 <div class="formulario__grupo-input">     
@@ -104,7 +104,7 @@
 </div>
 <p class="formulario__input-error">Este campo debe estar lleno y máximo 120 caracteres.</p>
 </div>
-
+<!-- Grupo: Codigotel -->
 <div class="formulario__grupo" id="grupo__cod"> 
     <label for = "">Codigo de pais</label> 
     <select name = "codigopais">
@@ -117,7 +117,7 @@
         <option>+37</option>
     </select>
 </div>
-
+<!-- Grupo: Telefono -->
 <div class="formulario__grupo" id="grupo__telefono">  
     <label for = "telefono" class="formulario__label">Telefono</label> 
 <div class="formulario__grupo-input">     
@@ -126,7 +126,7 @@
 </div>
 <p class="formulario__input-error">El telefono solo puede contener numeros</p>
 </div>
-
+<!-- Grupo: Preferencias modelo -->
 <div class="formulario__grupo" id="grupo__modelo">  
     <label for = "modelo" class="formulario__label">Ingrese su modelo favorito</label> 
 <div class="formulario__grupo-input">     
@@ -135,26 +135,28 @@
 </div>
 <p class="formulario__input-error">Es necesario que complete el espacio</p>
 </div>
-
+<!-- Grupo: Color auto -->
 <div class="formulario__grupo" id="grupo__color">
     <label for = "colorfav"><strong>Color Favorito</strong></label><br>
         <input type = "radio" id = "azul" name = "color" value="1">Azul<br>
         <input type = "radio" id = "rojo" name = "color" value="2">Rojo<br>
         <input type = "radio" id = "verde" name = "color" value="3">Verde<br>
 </div>
+<!-- Grupo: Marca auto -->
 <div class="formulario__grupo" id="grupo__marca">
     <label for = "marcafav"><strong>Marca Favorita</strong></label><br>
         <input type = "radio" id = "Mercedes-Benz" name = "marca" value="1">Mercedes-Benz<br>
         <input type = "radio" id = "BMW" name = "marca" value="2">BMW<br>
         <input type = "radio" id = "Ford" name = "marca" value="3">Ford<br>
 </div>
+<!-- Grupo: Estilo auto -->
 <div class="formulario__grupo" id="grupo__estilo">
     <label for = "estilofav"><strong>Estilo Favorito</strong></label><br>
         <input type = "radio" id = "Familiar" name = "estilo" value="1">Familiar<br>
         <input type = "radio" id = "Deportivo" name = "estilo" value="2">Deportivo<br>
         <input type = "radio" id = "Todoterreno" name = "estilo" value="3">Todoterreno<br>
     </div>
-    
+<!-- Grupo: Double slider range -->   
     <div class="formulario__grupo" >
         <label for = "estilofav"><strong> Seleccione el maximo y minimo que estaría dispuesto a gastar en
             un vehículo</strong></label>
@@ -192,6 +194,7 @@
       </div>
 
     </div>
+<!-- Grupo: Terminos -->
 <div class="formulario__grupo" id="grupo__terminos">  
     <label class="formulario__label">      
     <input class="formulario__checkbox" type = "checkbox" name = "terminos" id="terminos">
@@ -200,8 +203,8 @@
 <div class="formulario__mensaje" id="formulario__mensaje">
     <p><i class="fas fa-exclamation-triangle"></i><b>ERROR:</b>Por favor completa el formulario correctamente</p>
 </div>
-
-<div class="formulario__grupo formulario__grupo-btn-enviar">
+<!-- Grupo: Boton -->
+<div class="formulario__grupo formulario__grupo-btn-registrar">
     <button type="submit" class="formulario__btn">Registrar</button>
     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario registrado exitosamente!</p>
 </div>    
